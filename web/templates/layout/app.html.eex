@@ -25,7 +25,7 @@
       <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
       <section>
           <form method="post" action="/artifacts">
-              <input type="hidden" name="_csrf_token" value="<%# Backbrain.ArtifactController.get_csrf_token%>">
+              <input type="hidden" name="_csrf_token" value="<%= get_csrf_token %>">
               <input name="url" type="text" placeholder="enter URL"/>
               <input type="submit" value="save"/>
           </form>
