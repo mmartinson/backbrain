@@ -1,0 +1,25 @@
+body {
+    background-color: #000000;
+}
+
+a.artifact {
+    font-size: 18px;
+}
+
+h1.title {
+    font-family: "Helvetica";
+    font-weigth: bold;
+    font-size: 40px;
+    color: #fff;
+    
+}
+
+input.url-box {
+    width: 700px;
+    color: #337ab7;
+    background-color: #fff
+}
+
+input[type="submit"].submit-url {
+}
+

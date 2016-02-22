@@ -1,5 +1,5 @@
-<div class="jumbotron">
+<div class="artifacts">`
     <%= for artifact <- reverse(@artifacts) do %>
-        <a href="<%= artifact.url %>"><%= display(artifact) %></p>
+        <a href="<%= artifact.url %>" class="artifact"><%= display(artifact) %></p>
     <% end %>
 </div>
