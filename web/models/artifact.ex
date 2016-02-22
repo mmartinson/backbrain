@@ -3,12 +3,14 @@ defmodule Backbrain.Artifact do
 
   schema "artifacts" do
     field :url, :string
+    field :title, :string
+    field :needs_metadata, :boolean
 
     timestamps
   end
 
-  @required_fields ~w(url)
-  @optional_fields ~w()
+  @required_fields ~w(url title)
+  @optional_fields ~w(needs_metadata)
 
   @doc """
   Creates a changeset based on the `model` and `params`.

@@ -1,7 +1,5 @@
 <div class="jumbotron">
-    <h1>Backbrain</h1>
-
-    <%= for artifact <- @artifacts do %>
+    <%= for artifact <- reverse(@artifacts) do %>
         <a href="<%= artifact.url %>"><%= display(artifact) %></p>
     <% end %>
 </div>
